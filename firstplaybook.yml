@@ -1,0 +1,8 @@
+---
+- name: Download image
+  hosts: webservers
+  become: yes
+  task:
+  get_url:
+    url: 'https://i1.sndcdn.com/avatars-000104076356-f6id6x-t500x500.jpg'
+    dest: 'C:\Users\vyas2\OneDrive\Pictures\firstplaybook'
